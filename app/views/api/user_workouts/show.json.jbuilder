@@ -1,2 +1,2 @@
 
-json.id @user_workouts.id
+json.id @user_workout.id

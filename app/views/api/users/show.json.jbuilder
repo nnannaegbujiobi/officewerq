@@ -6,4 +6,4 @@ json.bio  @user.bio
 json.gender @user.gender
 json.image  @user.image
 json.level  @user.level
-json.password_digest @user.password_digest
+# json.password_digest @user.password_digest
