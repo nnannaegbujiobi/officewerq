@@ -1,5 +1,5 @@
 class Api::UsersController < ApplicationController
- before_action :authenticate_user
+ # before_action :authenticate_user, except: [:create, :show]
 
 
 def create
@@ -26,16 +26,22 @@ end
 def update
   @user = User.find(params[:id])
   @user.name = params[:name]
-  @user.email = params [:email]
+  @user.email = params[:email]
   @user.bio = params[:bio]
   @user.gender = params[:gender]
   @user.image = params[:image]
   @user.level = params[:level]
   @user.password = params[:password]
-if user.save 
+if @user.save 
   render json: {message: "User created successfully"}, status: :created
    else
-    render json: {errors: user.errors.full_messages}, status: :bad_request
+    render json: {errors: @user.errors.full_messages}, status: :bad_request
   end
+ end
+
+ def destroy
+  @user = User.find(params[:id])
+  @user.destroy
+  render json: {message: "user successfully destroyed"}
  end
 end

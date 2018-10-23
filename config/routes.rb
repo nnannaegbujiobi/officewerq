@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
     get "/users/:id" => "users#show"
 
+    delete "/users/:id" => "users#destroy"
 
 
     patch "/users/:id/" => "users#update"
@@ -22,11 +23,11 @@ Rails.application.routes.draw do
 
     get "/user_workouts/:id" => "user_workouts#show"
 
+    post "user_workouts" => "user_workouts#create"
+
   #sessions#create
 
     post "/sessions" => "sessions#create"
-
-
 
   end
 
