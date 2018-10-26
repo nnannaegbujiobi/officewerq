@@ -3,4 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   has_many :user_workouts
   has_many :workouts,through: :user_workouts
+  def progress
+    #calculate number of workouts based on user_workout associations
+  end
 end
