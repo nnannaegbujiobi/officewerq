@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     patch "/users/:id/" => "users#update"
 
   #workout restful routes
-    get "workouts" => "workouts#index"
+    get "/workouts" => "workouts#index"
 
     get "workouts/:id" => "workouts#show"
 

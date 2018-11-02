@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
 
 
 def create
-  user = User.new(name: params[:name], email: params[:email], bio: params[:bio], gender: params[:gender], image: params[:image], level: params[:level], 
+  user = User.new(name: params[:name], email: params[:email], bio: params[:bio], gender: params[:gender], avatar: params[:avatar], level: params[:level], 
     password: params[:password],
     password_confirmation: params[:password_confirmation]
     )

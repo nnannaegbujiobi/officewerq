@@ -15,7 +15,7 @@ users = User.create({name:"Joseph",email:"Joseph@gmail.com",bio:"blah blah blah!
 
 workouts = Workout.create({name:"Yoga flow",time:"20mins",image:"image",description:"find your center with some Yoga",level:"beginner"})
 workouts = Workout.create({name:"Fury burn",time:"15mins",image:"image",description:"Go hard with an intense strength and condition workout",level:"intermediate"})
-workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"image",description:"Get Jack with this muscle buildind program",level:"advanced"})
+workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"image",description:"Get Jack with this muscle building program",level:"advanced"})
 
 
 user_workouts = UserWorkout.create({user_id:2,workout_id:3})
