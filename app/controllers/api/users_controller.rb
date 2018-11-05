@@ -15,6 +15,11 @@ def create
   end
  end
 
+ def profile
+    @user = current_user
+    render "show.json.jbuilder"
+  end
+
  
 
 def show
