@@ -14,12 +14,12 @@ Rails.application.routes.draw do
     delete "/users/:id" => "users#destroy"
 
 
-    patch "/users/:id/" => "users#update"
+    patch "/users/me/" => "users#update"
 
   #workout restful routes
     get "/workouts" => "workouts#index"
 
-    get "workouts/:id" => "workouts#show"
+    get "workouts/daily" => "workouts#show"
 
   #user_workout
 

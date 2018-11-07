@@ -29,7 +29,7 @@ def show
 end
 
 def update
-  @user = User.find(params[:id])
+  @user = current_user
   @user.name = params[:name]
   @user.email = params[:email]
   @user.bio = params[:bio]

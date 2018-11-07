@@ -16,7 +16,44 @@ class User < ApplicationRecord
     progress = completed * 100 / 30
 
   end 
-    #calculate number of workouts based on user_workout associations
-  #   end
-  # end
+  def badge_name
+    progress = calculated_progress
+    if progress > 0 && progress < 10
+      "Office Potatoe"
+    elsif progress >= 10 && progress < 20
+      "Coffee Boi"
+    elsif progress >= 20 && progress < 30
+      ""
+    elsif progress >= 30 && progress < 40
+      ""
+    elsif progress >= 40 && progress < 50
+      ""
+    elsif progress >= 50 && progress < 60
+      ""
+    elsif progress >= 60 && progress < 70
+      ""
+    elsif progress >= 70 && progress < 80
+      ""
+    elsif progress >= 80 && progress < 90
+      ""
+    elsif progress >= 90 && progress < 100
+      ""
+    elsif progress = 100
+      "Hero For Hire"
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+      
+
+
+    end
+  end
 end

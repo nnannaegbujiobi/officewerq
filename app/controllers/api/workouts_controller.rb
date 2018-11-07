@@ -6,7 +6,11 @@ def index
 end
 
 def show
-  @workout = Workout.find_by(id:params[:id])
+  puts "======================#{current_user}"
+  workouts = Workout.where(level: current_user.level)
+  @workout = workouts.sample
+  puts "======================#{@workout}"
+  # @workout = Workout.find_by(id:params[:id])
   render "show.json.jbuilder"
 
   end
