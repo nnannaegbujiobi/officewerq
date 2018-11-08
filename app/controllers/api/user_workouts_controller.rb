@@ -13,7 +13,8 @@ class Api::UserWorkoutsController < ApplicationController
     else
       @user_workout = UserWorkout.create(
         user_id: current_user.id,
-        workout_id: params[:workout_id]
+        workout_id: params[:workout_id],
+        times_done: 1
       )
       if @user_workout.save
         render "show.json.jbuilder"

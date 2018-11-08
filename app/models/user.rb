@@ -18,7 +18,7 @@ class User < ApplicationRecord
   end 
   def badge_name
     progress = calculated_progress
-    if progress > 0 && progress < 10
+    if progress >= 0 && progress < 10
       "Office Potatoe"
     elsif progress >= 10 && progress < 20
       "Coffee Boi"

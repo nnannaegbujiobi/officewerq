@@ -7,7 +7,7 @@ end
 
 def show
   puts "======================#{current_user}"
-  workouts = Workout.where(level: current_user.level)
+  workouts = Workout.where(level: current_user.level.downcase) 
   @workout = workouts.sample
   puts "======================#{@workout}"
   # @workout = Workout.find_by(id:params[:id])

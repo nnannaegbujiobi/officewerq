@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #users restful routes 
 
 
-    post "users" => "users#create"
+    post "/users" => "users#create"
 
     get "/users/me" => "users#profile"
 
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
     get "/user_workouts/:id" => "user_workouts#show"
 
-    post "user_workouts" => "user_workouts#create"
+    post "/user_workouts" => "user_workouts#create"
 
   #sessions#create
 
