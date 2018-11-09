@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do 
   #users restful routes 
-
+    get "users" => "users#index"
 
     post "/users" => "users#create"
 

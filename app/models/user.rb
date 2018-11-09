@@ -19,11 +19,11 @@ class User < ApplicationRecord
   def badge_name
     progress = calculated_progress
     if progress >= 0 && progress < 10
-      "Office Potato"
-    elsif progress >= 10 && progress < 20
-      "Coffee Boi"
-    elsif progress >= 20 && progress < 30
       "Unpaid Intern"
+    elsif progress >= 10 && progress < 20
+      "Office Potatoe"
+    elsif progress >= 20 && progress < 30
+      "Coffee Boi"
     elsif progress >= 30 && progress < 40
       "Warehouse Wizard"
     elsif progress >= 40 && progress < 50
