@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
     get "workouts/daily" => "workouts#show"
 
+
   #user_workout
 
     get "/user_workouts/:id" => "user_workouts#show"

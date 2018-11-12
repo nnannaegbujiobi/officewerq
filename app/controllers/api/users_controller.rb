@@ -41,7 +41,7 @@ def update
   @user.email = params[:email]
   @user.bio = params[:bio]
   @user.gender = params[:gender]
-  @user.image = params[:image]
+  @user.avatar = params[:avatar]
   @user.level = params[:level]
   @user.password = params[:password]
 if @user.save 
