@@ -13,9 +13,9 @@ users = User.create({name:"Joseph",email:"Joseph@gmail.com",bio:"blah blah blah!
 
 
 
-workouts = Workout.create({name:"Yoga flow",time:"20mins",image:"image",description:"find your center with some Yoga",level:"beginner"})
-workouts = Workout.create({name:"Fury burn",time:"15mins",image:"image",description:"Go hard with an intense strength and condition workout",level:"intermediate"})
-workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"http://www.thelongrun.com.au/wp-content/uploads/Lunges-800x450.jpg",description:"Get Jack with this muscle building program",level:"advanced"})
+# workouts = Workout.create({name:"Yoga flow",time:"20mins",image:"image",description:"find your center with some Yoga",level:"beginner"})
+# workouts = Workout.create({name:"Fury burn",time:"15mins",image:"image",description:"Go hard with an intense strength and condition workout",level:"intermediate"})
+# workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"http://www.thelongrun.com.au/wp-content/uploads/Lunges-800x450.jpg",description:"Get Jack with this muscle building program",level:"advanced"})
 
 workouts = Workout.create({name:"Cardio Chair",time:"15mins",image:"https://imgur.com/a/ZeZNMhu",description:"Get your cardio in without leaving your desk!",level:"beginner"})
 
@@ -38,6 +38,28 @@ workouts = Workout.create({name:"Stapler",time:"15mins",image:"Stapler.jpg",desc
 
 
 workouts = Workout.create({name:"Upperbody Press",time:"15mins",image:"UpperbodyPress.jpg",description:"Upperbody work lets go!",level:"beginner"})
+
+
+workouts = Workout.create({name:"ControlAltDelete",time:"20mins",image:"https://i.imgur.com/4EkxUf5.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Docked",time:"20mins",image:"https://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Fight ready",time:"20mins",image:"hhttps://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Full Body Works",time:"20mins",image:"https://i.imgur.com/RNuUgHW.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Fury Master",time:"20mins",image:"https://i.imgur.com/G0W95AE.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Hero Maker",time:"20mins",image:"https://i.imgur.com/GdhBrQS.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"PowerTrim",time:"20mins",image:"https://i.imgur.com/O0zlJEZ.jpg",description:"",level:"advanced"})
+
+
+workouts = Workout.create({name:"Fight ready",time:"20mins",image:"hhttps://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Fight ready",time:"20mins",image:"hhttps://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
+
+workouts = Workout.create({name:"Fight ready",time:"20mins",image:"hhttps://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
 
 
 
