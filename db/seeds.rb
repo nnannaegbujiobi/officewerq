@@ -17,13 +17,13 @@ workouts = Workout.create({name:"Yoga flow",time:"20mins",image:"image",descript
 workouts = Workout.create({name:"Fury burn",time:"15mins",image:"image",description:"Go hard with an intense strength and condition workout",level:"intermediate"})
 workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"http://www.thelongrun.com.au/wp-content/uploads/Lunges-800x450.jpg",description:"Get Jack with this muscle building program",level:"advanced"})
 
-workouts = Workout.create({name:"Cardio Chair",time:"15mins",image:"CardioChair.jpg",description:"Get your cardio in without leaving your desk!",level:"beginner"})
+workouts = Workout.create({name:"Cardio Chair",time:"15mins",image:"https://imgur.com/a/ZeZNMhu",description:"Get your cardio in without leaving your desk!",level:"beginner"})
 
-workouts = Workout.create({name:"Chair Abs",time:"15mins",image:"ChairAbs.jpg",description:"Crunch those abs while your crunching those numbers!",level:"beginner"})
+workouts = Workout.create({name:"Chair Abs",time:"15mins",image:"https://imgur.com/a/ZeZNMhu",description:"Crunch those abs while your crunching those numbers!",level:"beginner"})
 
-workouts = Workout.create({name:"Cardio Check",time:"15mins",image:"CardioCheck.jpg",description:"Cardio...Check...Check!",level:"beginner"})
+workouts = Workout.create({name:"Cardio Check",time:"15mins",image:"https://imgur.com/a/ZeZNMhu",description:"Cardio...Check...Check!",level:"beginner"})
 
-workouts = Workout.create({name:"Cardio Grind",time:"15mins",image:"CardioGrind.jpg",description:"Get your grind on with some fun cardio!",level:"beginner"})
+workouts = Workout.create({name:"Cardio Grind",time:"15mins",image:"https://imgur.com/a/ZeZNMhu",description:"Get your grind on with some fun cardio!",level:"beginner"})
 
 workouts = Workout.create({name:"Cardio Party",time:"15mins",image:"CardioParty.jpg",description:"Its a party at the office so sweat it out!",level:"beginner"})
 
