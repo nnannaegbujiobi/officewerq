@@ -1,65 +1,80 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-users = User.create({name:"David",email:"David@gmail.com",bio:"Dopechinoo!!",gender:"male",image:"image",level:"beginner",password:"33333"})
-
-users = User.create({name:"Mike",email:"Mike@gmail.com",bio:"klangin and Banging!!",gender:"male",image:"image",level:"advanced",password:"55555"})
-
-users = User.create({name:"Joseph",email:"Joseph@gmail.com",bio:"blah blah blah!!",gender:"male",image:"image",level:"beginner",password:"77777"})
-
-
-
-# workouts = Workout.create({name:"Yoga flow",time:"20mins",image:"image",description:"find your center with some Yoga",level:"beginner"})
-# workouts = Workout.create({name:"Fury burn",time:"15mins",image:"image",description:"Go hard with an intense strength and condition workout",level:"intermediate"})
-# workouts = Workout.create({name:"Muscle Madness",time:"15mins",image:"http://www.thelongrun.com.au/wp-content/uploads/Lunges-800x450.jpg",description:"Get Jack with this muscle building program",level:"advanced"})
-
-workouts = Workout.create({name:"Cardio Chair",time:"15mins",image:"https://i.imgur.com/PwWWB68.jpg",description:"Get your cardio in without leaving your desk!",level:"beginner"})
-
-workouts = Workout.create({name:"Chair Abs",time:"15mins",image:"https://i.imgur.com/uQTox0h.jpg",description:"Crunch those abs while your crunching those numbers!",level:"beginner"})
-
-workouts = Workout.create({name:"Cardio Check",time:"15mins",image:"https://i.imgur.com/uQTox0h.jpg",description:"Cardio...Check...Check!",level:"beginner"})
-
-workouts = Workout.create({name:"Cardio Grind",time:"15mins",image:"https://i.imgur.com/FYXXFbH.jpg",description:"Get your grind on with some fun cardio!",level:"beginner"})
-
-workouts = Workout.create({name:"Cardio Party",time:"15mins",image:"https://i.imgur.com/RHJwQtE.jpg",description:"Its a party at the office so sweat it out!",level:"beginner"})
-
-workouts = Workout.create({name:"Power Hold",time:"15mins",image:"https://i.imgur.com/QZ6o8NM.jpg",description:"Start your strength track now with the Power Hold!",level:"beginner"})
-
-workouts = Workout.create({name:"Rainmaker",time:"15mins",image:"https://i.imgur.com/6HXskwu.jpg",description:"Bring The Rain!",level:"beginner"})
-
-
-workouts = Workout.create({name:"Seated Boxer",time:"15mins",image:"https://i.imgur.com/u4JMPXw.jpg",description:"Kick some serious butt while gettub ready for that next presentation!",level:"beginner"})
-
-workouts = Workout.create({name:"Stapler",time:"15mins",image:"https://i.imgur.com/pqncSp0r.jpg",description:"The Stapler enough said!",level:"beginner"})
-
-
-workouts = Workout.create({name:"Upperbody Press",time:"15mins",image:"https://i.imgur.com/UlXUwyV.jpg",description:"Upperbody work lets go!",level:"beginner"})
-
-
-workouts = Workout.create({name:"ControlAltDelete",time:"20mins",image:"https://i.imgur.com/4EkxUf5.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"Docked",time:"20mins",image:"https://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"Fight ready",time:"20mins",image:"https://i.imgur.com/pXiwgCT.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"Full Body Works",time:"20mins",image:"https://i.imgur.com/RNuUgHW.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"Fury Master",time:"20mins",image:"https://i.imgur.com/G0W95AE.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"Hero Maker",time:"20mins",image:"https://i.imgur.com/GdhBrQS.jpg",description:"",level:"advanced"})
-
-workouts = Workout.create({name:"PowerTrim",time:"20mins",image:"https://i.imgur.com/O0zlJEZ.jpg",description:"",level:"advanced"})
-
-
-
-
-
-user_workouts = UserWorkout.create({user_id:2,workout_id:3})
-
-user_workouts = UserWorkout.create({user_id:1,workout_id:4})
-
-user_workouts = UserWorkout.create({user_id:3,workout_id:1})
+User.create!([
+  {name: "Will", email: "will@gmail.com", bio: "I talk too much!!", gender: "", level: "Beginner", password_digest: "$2a$10$MOZl3y9q3fIqBZo2w8IX2eZmL.CFQapoTCJ1jR4DUBckYKosfOZzC", image: nil},
+  {name: "ron", email: "ron@gmail.com", bio: "hey hey", gender: "", level: "Advanced", password_digest: "$2a$10$TWiTGRBXj3Tbkxl0ojvrXegQYYC9H8/HNOOru/K5oVAJjyY.ZYytq", image: nil},
+  {name: "robby", email: "robby@gmail.com", bio: "im a beast", gender: "", level: "Advanced", password_digest: "$2a$10$SHw3GBGVHxSZeHWMF6CU0.PXrKlUrM/cQ3FAtY4KOu5284wHnFYUO", image: nil},
+  {name: "Dani", email: "dani@gmail.com", bio: "nnanna is my favorite student", gender: "female", level: "Advanced", password_digest: "$2a$10$6CCv9F/9StqXF8y0/Ae7f.3fHXiwmWifP0jY7VNhAA5Qc1I76IVMa", image: nil},
+  {name: "jay ", email: "jay@gmail.com", bio: "jay all day wengrow", gender: "", level: "Beginner", password_digest: "$2a$10$g8WuDDQjrFohPnuVOYnmEO63g33h9/5diaEnWR9AHdEWc2nlgmD8y", image: nil},
+  {name: "Ryan", email: "Ryan@gmail.com", bio: "hey hey ", gender: "male", level: "intermediate", password_digest: "$2a$10$TTXh6QaNNZDPO2VYcvWolO0yddSDBRkqzxSAFd2XXuUjPl8gQlLl2", image: nil},
+  {name: "Ben", email: "Ben@gmail.com", bio: "im the ish ", gender: "male", level: "beginner", password_digest: "$2a$10$6Yzti.KgiEXtXUa6jSTatO5ZifoNzPCLlErf.dcp1Hz.AFPMa2POi", image: nil},
+  {name: "susan", email: "susan@gmail.com", bio: "lets go ", gender: "", level: "Advanced", password_digest: "$2a$10$aas5iOfLYt7/wSZBQiP3.uEuT3gN7CtKvRyoMxzH7xbkMPve/n7QW", image: nil},
+  {name: "Tommy ", email: "tommy@gmail.com", bio: "im a beast", gender: "", level: "Beginner", password_digest: "$2a$10$eIaml1Ss0gqcMvDUaStzje/Z.JchL6wLt6eaeOR4OkE.4YBYhJO2G", image: nil},
+  {name: "Nnanna", email: "nnanna@gmail.com", bio: "what up", gender: "male", level: "advanced", password_digest: "$2a$10$o9nA7TciwSwnSxTisb.iouohzZ.oZlK1X.1.WS1khxhpKEpNqNsn.", image: nil},
+  {name: "chris", email: "nwakaloc@gmail.com", bio: "what up", gender: "", level: "", password_digest: "$2a$10$DDwJaqQ/Elk9ADWZgNjsZebZ1Iq4hQIrdwsWBBnEXpT/aAw1vKEkK", image: nil},
+  {name: "Tim", email: "tim@gmail.com", bio: "dude is crazy", gender: "male", level: "advanced", password_digest: "$2a$10$MNF3sDnJNGT8JtmEEhwCgursJjmuDPh6ZueWla3TUESayDfCev3Vm", image: nil},
+  {name: "chris", email: "chris@gmail.com", bio: "im gay ", gender: "", level: "Beginner", password_digest: "$2a$10$v7kO8pF.PBr/h4dmSHWjbeYLy98j0cbq1gT8aarBLXciMvf3RAljG", image: nil},
+  {name: "David", email: "David@gmail.com", bio: "Dopechinoo!!", gender: "male", level: "beginner", password_digest: "$2a$10$NA6mAJBwA3f5lKYpYPbrAehqJ7s9QI2P8smD6Fw43gQkrrJ0bYtqS", image: "image"},
+  {name: "Mike", email: "Mike@gmail.com", bio: "klangin and Banging!!", gender: "male", level: "advanced", password_digest: "$2a$10$OqFdw4NSTzlL3iOeaT0Bs.RkKj04kcQkhxF.QxXrkhfruqjCu3t0W", image: "image"},
+  {name: "Joseph", email: "Joseph@gmail.com", bio: "blah blah blah!!", gender: "male", level: "beginner", password_digest: "$2a$10$FwgHmg3vzw/p5PTzFVpbWuqVttAg4ZqwhpKLgjaWxYKczER.YRX0y", image: "image"},
+  {name: "josh ", email: "josh@gmail.com", bio: "yo yo", gender: "", level: "Advanced", password_digest: "$2a$10$MMzFCpCqEfo.meen58asWOR.jHVkMQHwNxSHXqNAmTZOWF.iHFiM2", image: nil},
+  {name: "ben", email: "brbenjaminreed@gmail.com", bio: "Im da man", gender: "", level: "Beginner", password_digest: "$2a$10$o8.h2ah0B88iT87XKfpmzOUNyAlECPpEtUI6oFKTb4t.SRXOcdzci", image: nil}
+])
+UserWorkout.create!([
+  {user_id: 1, workout_id: 2, times_done: 1},
+  {user_id: 2, workout_id: 3, times_done: 1},
+  {user_id: 3, workout_id: 1, times_done: 1},
+  {user_id: 1, workout_id: 2, times_done: 1},
+  {user_id: 1, workout_id: 4, times_done: 2},
+  {user_id: 12, workout_id: 5, times_done: 2},
+  {user_id: 12, workout_id: 2, times_done: 3},
+  {user_id: 1, workout_id: 1, times_done: 3},
+  {user_id: 6, workout_id: 5, times_done: 1},
+  {user_id: 6, workout_id: 2, times_done: 4},
+  {user_id: 1, workout_id: 4, times_done: 1},
+  {user_id: 1, workout_id: 15, times_done: 1},
+  {user_id: 17, workout_id: 33, times_done: 1},
+  {user_id: 17, workout_id: 31, times_done: 1},
+  {user_id: 17, workout_id: 34, times_done: 3},
+  {user_id: 17, workout_id: 38, times_done: 1},
+  {user_id: 18, workout_id: 10, times_done: 1},
+  {user_id: 18, workout_id: 17, times_done: 1},
+  {user_id: 18, workout_id: 18, times_done: 1},
+  {user_id: 18, workout_id: 9, times_done: 1},
+  {user_id: 18, workout_id: 12, times_done: 1},
+  {user_id: 18, workout_id: 15, times_done: 1},
+  {user_id: 20, workout_id: 14, times_done: 1},
+  {user_id: 20, workout_id: 12, times_done: 1},
+  {user_id: 20, workout_id: 11, times_done: 1},
+  {user_id: 20, workout_id: 16, times_done: 1},
+  {user_id: 6, workout_id: 35, times_done: 1},
+  {user_id: 6, workout_id: 34, times_done: 1},
+  {user_id: 22, workout_id: 16, times_done: 1}
+])
+WWorkout.create!([
+  {name: "Fight ready", time: "20mins", image: "https://i.imgur.com/3I5avia.jpg", description: "", level: "advanced"},
+  {name: "Cardio Chair", time: "15mins", image: "https://i.imgur.com/PwWWB68.jpg", description: "Get your cardio in without leaving your desk!", level: "beginner"},
+  {name: "Rainmaker", time: "15mins", image: "https://i.imgur.com/6HXskwu.jpg", description: "Bring The Rain!", level: "beginner"},
+  {name: "Cardio Party", time: "15mins", image: "https://i.imgur.com/RHJwQtE.jpg", description: "Its a party at the office so sweat it out!", level: "beginner"},
+  {name: "Chair Abs", time: "15mins", image: "https://i.imgur.com/uQTox0h.jpg", description: "Crunch those abs while your crunching those numbers!", level: "beginner"},
+  {name: "Cardio Check", time: "15mins", image: "https://i.imgur.com/uQTox0h.jpg", description: "Cardio...Check...Check!", level: "beginner"},
+  {name: "Cardio Grind", time: "15mins", image: "https://i.imgur.com/FYXXFbH.jpg", description: "Get your grind on with some fun cardio!", level: "beginner"},
+  {name: "Power Hold", time: "15mins", image: "https://i.imgur.com/QZ6o8NM.jpg", description: "Start your strength track now with the Power Hold!", level: "beginner"},
+  {name: "Seated Boxer", time: "15mins", image: "https://i.imgur.com/u4JMPXw.jpg", description: "Kick some serious butt while gettub ready for that next presentation!", level: "beginner"},
+  {name: "Stapler", time: "15mins", image: "https://i.imgur.com/pqncSp0r.jpg", description: "The Stapler enough said!", level: "beginner"},
+  {name: "Upperbody Press", time: "15mins", image: "https://i.imgur.com/UlXUwyV.jpg", description: "Upperbody work lets go!", level: "beginner"},
+  {name: "ControlAltDelete", time: "20mins", image: "https://i.imgur.com/4EkxUf5.jpg", description: "", level: "advanced"},
+  {name: "Docked", time: "20mins", image: "https://i.imgur.com/pXiwgCT.jpg", description: "", level: "advanced"},
+  {name: "Full Body Works", time: "20mins", image: "https://i.imgur.com/RNuUgHW.jpg", description: "", level: "advanced"},
+  {name: "Fury Master", time: "20mins", image: "https://i.imgur.com/G0W95AE.jpg", description: "", level: "advanced"},
+  {name: "Hero Maker", time: "20mins", image: "https://i.imgur.com/GdhBrQS.jpg", description: "", level: "advanced"},
+  {name: "PowerTrim", time: "20mins", image: "https://i.imgur.com/O0zlJEZ.jpg", description: "", level: "advanced"},
+  {name:"Abs & Core",time:"15mins",image:"https://i.imgur.com/kuOlgbC.jpg",description:"",level:"intermediate"},
+  {name:"Arms360",time:"15mins",image:"https://i.imgur.com/6O45Fg7.jpg",description:"",level:"intermediate"},
+  {name:"Cardio Prime",time:"15mins",image:"https://i.imgur.com/PiKq0P1.jpg",description:"",level:"intermediate"},
+  {name:"Chair Cycle",time:"15mins",image:"https://i.imgur.com/EL837L0.jpg",description:"",level:"intermediate"},
+  {name:"Office Boxer",time:"15mins",image:"https://i.imgur.com/dH3YlMb.jpg",description:"",level:"intermediate"},
+  {name:"Office Circuit",time:"15mins",image:"https://i.imgur.com/8fRXRJk.jpg",description:"",level:"intermediate"},
+  {name:"The Wall",time:"15mins",image:"https://imgur.com/sopjrqv",description:"",level:"intermediate"},
+  {name:"Thunderbolt",time:"15mins",image:"https://imgur.com/T2kZeFC",description:"",level:"intermediate"},
+  {name:"Yoga Fix",time:"15mins",image:"https://imgur.com/9QaBsDQ",description:"",level:"intermediate"},
+  {name:"Cardio Mixer", time:"15mins",image:"https://i.imgur.com/MloUIP3.jpg",description:"",level:"intermediate"}
+])
